@@ -1,4 +1,4 @@
-@import url("all.min.css");
+@import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
 
 /*
@@ -1887,6 +1887,15 @@ input, select, textarea {
 		position: relative;
 	}
 
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
 		.icon.circle {
 			-moz-transition: all 0.2s ease-in-out;
 			-webkit-transition: all 0.2s ease-in-out;
@@ -1918,21 +1927,21 @@ input, select, textarea {
 					background: #7fb7d2;
 				}
 
-			.icon.circle.fa-facebook-f {
+			.icon.circle.fa-facebook {
 				background: #7490c3;
 				color: #fff;
 			}
 
-				.icon.circle.fa-facebook-f:hover {
+				.icon.circle.fa-facebook:hover {
 					background: #829bc9;
 				}
 
-			.icon.circle.fa-google-plus-g {
+			.icon.circle.fa-google-plus {
 				background: #db6b67;
 				color: #fff;
 			}
 
-				.icon.circle.fa-google-plus-g:hover {
+				.icon.circle.fa-google-plus:hover {
 					background: #df7b77;
 				}
 
@@ -2346,13 +2355,10 @@ input, select, textarea {
 						#header nav ul li.submenu > a:before {
 							-moz-osx-font-smoothing: grayscale;
 							-webkit-font-smoothing: antialiased;
-							display: inline-block;
+							font-family: FontAwesome;
 							font-style: normal;
-							font-variant: normal;
-							text-rendering: auto;
-							line-height: 1;
-							font-family: "Font Awesome 5 Free";
-							font-weight: 900;
+							font-weight: normal;
+							text-transform: none !important;
 						}
 
 						#header nav ul li.submenu > a:before {
@@ -2367,11 +2373,6 @@ input, select, textarea {
 						transition: all 0.2s ease-in-out;
 						background: rgba(188, 202, 206, 0.15);
 					}
-						
-						#header nav ul li.submenu.active > a:before {
-							content: '\f106';
-							margin-right: 0.65em;
-						}
 
 					#header nav ul li.current > a {
 						font-weight: 900;
@@ -2983,7 +2984,7 @@ input, select, textarea {
 					#navButton .toggle:before {
 						-moz-osx-font-smoothing: grayscale;
 						-webkit-font-smoothing: antialiased;
-						font-family: "Font Awesome 5 Free";
+						font-family: FontAwesome;
 						font-style: normal;
 						font-weight: normal;
 						text-transform: none !important;
