@@ -1775,8 +1775,7 @@ input, select, textarea {
 				font-size: 3.5em;
 				opacity: 0.35;
 				top: -15%;
-				position: absolute;
-				right: 46.5%;
+				position: relative;
 			}
 
 	footer > :last-child {
@@ -2986,7 +2985,7 @@ input, select, textarea {
 						-webkit-font-smoothing: antialiased;
 						font-family: "Font Awesome 5 Free";
 						font-style: normal;
-						font-weight: normal;
+						font-weight: 900;
 						text-transform: none !important;
 					}
 
