@@ -10,4 +10,4 @@ Also, we want to involve parents in the organization of sport events, meetings, 
 
 **In [My student profile]( https://other-project.github.io/2de/English%20-%20Future%20School/profile.html)** <BR />
 The schedule of a student at our school is similar to this one:  
-Beginning of classes at 8 am with Algebra, then English at 9 am, followed by a break at 10 am. After the break, at a quarter past 10 am, Sciences, at 11 am Practical work, then lunch at midday. Resumption of classes at quarter to 1 pm with Technology then at 1:40 pm, Theater or Entertainment, at 20 to 2 pm, Physical Education, and end of classes at haft past 3 pm, students join their respective club.  
+Beginning of classes at 8 am with Algebra, then English at 9 am, followed by a break at 10 am. After the break, at a quarter past 10 am, Sciences, at 11 am Practical work, then lunch at midday. Resumption of classes at quarter to 1 pm with Technology then at 20 to 2 pm, Theater or Entertainment, at 20 to 3 pm, Physical Education, and end of classes at haft past 3 pm, students join their respective club.  
