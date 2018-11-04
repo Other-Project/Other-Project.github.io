@@ -37,14 +37,25 @@
 		}
 		
 		p.table-title{
-			width: 50%; 
-			height: 45px; 
+			padding-bottom: 15px; 
 			text-align: center; 
-			margin: 0 auto; 
 			font-size: larger; 
 			font-weight: bold; 
 			border: solid; 
 			border-bottom: 0;
+			margin-bottom: 0;
+		}
+		
+		@media screen and (min-width: 736px) {
+			.table-container{
+				width: 50%; 
+				margin: 0 auto;
+			}
+		}
+		@media screen and (max-width: 840px) {
+			.row .col-12-narrower.not-a {
+				width: 33.3333333333%;
+			}
 		}
 	</style>
 	<body class="no-sidebar is-preload">
@@ -103,57 +114,59 @@
 										<header>
 											<h3>Schedule</h3>
 										</header>
-										<p class="table-title">Inter-connected High School</p>
-										<table border="1" style="width: 50%; margin: 0 auto;">
-											<thead style="font-size: large; font-weight: bold;">
-												<tr style="border-top: 0;">
-													<td>Hour</td>
-													<td>Subject</td>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>8:00</td>
-													<td>Algebra</td>
-												</tr>
-												<tr>
-													<td>9:00</td>
-													<td>English</td>
-												</tr>
-												<tr>
-													<td>10:00</td>
-													<td>Break</td>
-												</tr>
-												<tr>
-													<td>10:15</td>
-													<td>Sciences</td>
-												</tr>
-												<tr>
-													<td>11:00</td>
-													<td>Practical Work</td>
-												</tr>
-												<tr>
-													<td>12:00</td>
-													<td>Lunch</td>
-												</tr>
-												<tr>
-													<td>12:45</td>
-													<td>Technology/Informatics</td>
-												</tr>
-												<tr>
-													<td>1:40</td>
-													<td>Theater/Entertainment</td>
-												</tr>
-												<tr>
-													<td>2:40</td>
-													<td>Physical Education</td>
-												</tr>
-												<tr>
-													<td>3:30</td>
-													<td>After-School Clubs</td>
-												</tr>
-											</tbody>
-										</table>
+										<div class="table-container">
+											<p class="table-title">Inter-connected High School</p>
+											<table border="1">
+												<thead style="font-size: large; font-weight: bold;">
+													<tr style="border-top: 0;">
+														<td>Hour</td>
+														<td>Subject</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>8:00</td>
+														<td>Algebra</td>
+													</tr>
+													<tr>
+														<td>9:00</td>
+														<td>English</td>
+													</tr>
+													<tr>
+														<td>10:00</td>
+														<td>Break</td>
+													</tr>
+													<tr>
+														<td>10:15</td>
+														<td>Sciences</td>
+													</tr>
+													<tr>
+														<td>11:00</td>
+														<td>Practical Work</td>
+													</tr>
+													<tr>
+														<td>12:00</td>
+														<td>Lunch</td>
+													</tr>
+													<tr>
+														<td>12:45</td>
+														<td>Technology/Informatics</td>
+													</tr>
+													<tr>
+														<td>1:40</td>
+														<td>Theater/Entertainment</td>
+													</tr>
+													<tr>
+														<td>2:40</td>
+														<td>Physical Education</td>
+													</tr>
+													<tr>
+														<td>3:30</td>
+														<td>After-School Clubs</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
 									</section>
 								</div>
 								<div id="diary" class="content panel" style="">
