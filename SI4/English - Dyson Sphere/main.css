@@ -1165,3 +1165,182 @@ footer {
 section:not(.parallax){
     min-height: 100vh;
 }
+
+/* Goals Section */
+.goals {
+    background: #0c0c0c;
+    position: relative;
+}
+
+.goal-tracker {
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 80px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.goal-tracker:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 204, 0, 0.2);
+    border-color: var(--accent-color);
+}
+
+.goal-amount {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.current-amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.total-amount {
+    font-size: 24px;
+    color: #aaa;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #ffcc00, #ff8800);
+    border-radius: 15px;
+    transition: width 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        rgba(255, 255, 255, 0.1), 
+        rgba(255, 255, 255, 0.3), 
+        rgba(255, 255, 255, 0.1)
+    );
+    animation: progress-shine 2s infinite linear;
+}
+
+@keyframes progress-shine {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.goal-description {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Extra Funding Section */
+.extra-funding-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.extra-funding-card {
+    background: rgba(20, 20, 20, 0.7);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    transform: translateY(50px);
+    opacity: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.extra-funding-card.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.extra-funding-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, var(--accent-color), transparent);
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+}
+
+.extra-funding-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 204, 0, 0.2);
+    border-color: var(--accent-color);
+}
+
+.extra-funding-card:hover::before {
+    transform: translateX(100%);
+}
+
+.funding-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.extra-funding-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.extra-funding-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+/* Responsive Styles for Goals Section */
+@media (max-width: 992px) {
+    .extra-funding-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .extra-funding-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .current-amount {
+        font-size: 36px;
+    }
+    
+    .total-amount {
+        font-size: 18px;
+    }
+}
