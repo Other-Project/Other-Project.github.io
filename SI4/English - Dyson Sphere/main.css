@@ -1344,3 +1344,19 @@ section:not(.parallax){
         font-size: 18px;
     }
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dyson-text {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: #cacaca;
+    transform: rotate(-2deg);
+    position: relative;
+    top: 2px;
+}
